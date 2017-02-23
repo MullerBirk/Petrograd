@@ -22,6 +22,10 @@ function vis_produkt(produkt){
     //indsæt data i klon
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
     klon.querySelector(".data_pris").innerHTML = produkt.pris;
+    //background-image: url(imgs/medium/bochkarev-md.jpg);
+    var imgPath = produkt.billede;
+    klon.querySelector('.data_pic').style.backgroundImage="url(imgs/medium/"+imgPath+"-md.jpg)";
+
 
 
 

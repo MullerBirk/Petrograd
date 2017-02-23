@@ -134,71 +134,8 @@ h5{
 }
 
 
-.ret_2{
-    background-image: url(imgs/medium/bondeplatte-md.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-
-    height: 25vw;
-    border: 10px solid white;
-
-    opacity: 0.5;
-}
-
-.ret_2:hover{
-    opacity: 1;
-}
-
-.ret_3{
-    background-image: url(imgs/medium/caviarbruschetta-md.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-
-    height: 25vw;
-    border: 10px solid white;
-
-    opacity: 0.5;
-}
-
-.ret_3:hover{
-    opacity: 1;
-}
-
-.ret_4{
-    background-image: url(imgs/medium/cola-md.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-
-    height: 25vw;
-    border: 10px solid white;
-
-    opacity: 0.5;
-}
-
-.ret_4:hover{
-    opacity: 1;
-}
 
 
-
-.knap_ret_1{
-    padding: 0 3vw;
-}
-
-.knap_ret_2{
-    padding: 0 3vw;
-}
-
-.knap_ret_3{
-    padding: 0 3vw;
-}
-
-.knap_ret_4{
-    padding: 0 3vw;
-}
 
 
 
