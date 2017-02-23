@@ -1,0 +1,223 @@
+@font-face{
+    font-family: tradizional;
+    src: url("tradizional.woff");
+}
+
+@font-face{
+    font-family: personality;
+    src: url("personality.otf");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+h2{
+
+    font-family: sans-serif;
+    font-size: 8rem;
+    text-align: left;
+    padding-bottom: 1vw;
+}
+
+h3{
+    font-family: sans-serif;
+
+}
+
+
+h5{
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+
+
+
+.splash{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+/****MENU*****/
+
+
+
+.pic_grid{
+    margin-bottom: 5vw;
+}
+
+.pic_grid_1{
+    background-image: url(imgs/medium/bochkarev-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 30vw;
+    position: relative;
+}
+
+.pic_grid_2{
+    background-image: url(imgs/medium/bondeboller-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 30vw;
+    position: relative;
+}
+
+.pic_grid_3{
+    background-image: url(imgs/medium/hvidvin-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 30vw;
+    position: relative;
+}
+
+.pic_grid_4{
+    background-image: url(imgs/medium/russisktapas-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 30vw;
+    position: relative;
+}
+
+.pic_grid_3 h2{
+    color: white;
+    font-family: sans-serif;
+
+}
+
+
+
+.underoverskrift h3{
+    padding-left: 3vw;
+}
+
+
+
+
+.ret_1{
+    background-image: url(imgs/medium/bochkarev-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 25vw;
+    border: 10px solid white;
+
+
+    opacity: 0.5;
+}
+
+.ret_1:hover{
+    opacity: 1;
+}
+
+
+.ret_2{
+    background-image: url(imgs/medium/bondeplatte-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 25vw;
+    border: 10px solid white;
+
+    opacity: 0.5;
+}
+
+.ret_2:hover{
+    opacity: 1;
+}
+
+.ret_3{
+    background-image: url(imgs/medium/caviarbruschetta-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 25vw;
+    border: 10px solid white;
+
+    opacity: 0.5;
+}
+
+.ret_3:hover{
+    opacity: 1;
+}
+
+.ret_4{
+    background-image: url(imgs/medium/cola-md.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 25vw;
+    border: 10px solid white;
+
+    opacity: 0.5;
+}
+
+.ret_4:hover{
+    opacity: 1;
+}
+
+
+
+.knap_ret_1{
+    padding: 0 3vw;
+}
+
+.knap_ret_2{
+    padding: 0 3vw;
+}
+
+.knap_ret_3{
+    padding: 0 3vw;
+}
+
+.knap_ret_4{
+    padding: 0 3vw;
+}
+
+
+
+.modal h4{
+    font-family: sans-serif;
+    font-size: 5rem;
+}
+
+.modal .rabat h5{
+    color: red;
+}
+
+
+
+
+
+footer{
+    margin: 5vw;
+    text-align: center;
+}
+
+
