@@ -12,43 +12,14 @@
 body{
     margin: 0;
     padding: 0;
-}
-
-p{
     font-family: sans-serif;
-    font-size: 1.2rem;
 }
-
-h2{
-
-    font-family: sans-serif;
-    font-size: 8rem;
-    text-align: left;
-    padding-bottom: 1vw;
-}
-
-h3{
-    font-family: sans-serif;
-
-}
-
-
-h5{
-    font-family: sans-serif;
-    font-size: 100%;
-}
-
 
 
 
 .splash{
     height: 100vh;
 }
-
-
-
-
-
 
 
 
@@ -135,7 +106,9 @@ h5{
 
 
 
-
+.udsolgt_streg{
+    text-decoration-line: line-through;
+}
 
 
 
