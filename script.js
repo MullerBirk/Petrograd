@@ -1,4 +1,20 @@
+window.addEventListener("load", siden_vises);
 
+function siden_vises(){
+     console.log("siden vises")
+
+     vis_produkt();
+}
+
+function vis_produkt(){
+    //klon produkt_template
+
+    var klon = document.querySelector("#produkt_template").content.cloneNode(true);
+    //indsæt data i klon
+
+    //append klon til produktliste
+    document.querySelector(".produktliste").appendChild(klon);
+}
 
 
 $('.scroll').click(function(){
