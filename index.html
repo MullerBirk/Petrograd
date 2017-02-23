@@ -107,14 +107,14 @@
            <!--herskal produkter lægges-->
 
             <template id="produkt_template">
-                <div class="col-xs-6 col-sm-3 col-md-3 btn" data-toggle="modal" data-target="#myModal_1">
+                <div class="col-xs-6 col-sm-3 col-md-3 btn" data-toggle="modal" data-target="#myModal">
                     <div class="row ret_1 data_pic"></div>
                     <div class="row text_ret_1">
                        <h5 class="data_navn">DATA_NAVN</h5>
                         <p class="pris">PRIS:<span class="data_pris">DATA_PRIS</span>,-</p>
                         <!--TODO: SÆT UDSOLGT CLASS VED UDSOLGT-->
                         <!--TODO: RABAT CLASS VED UDSOLGT-->
-                        <p class="udsolgt">Dette produkt et desværre udsolgt</p>
+                        <p class="udsolgt">Denne ret er desværre udsolgt</p>
                         <!--SKAL KUN VISES HVIS UDSOLGT-->
                         <p class="rabat">NY PRIS: <span class="data_rabat">DATA_RABAT</span>,- </p>
                         <!--SKAL KUN VISES VED RABAT-->
@@ -131,6 +131,28 @@
     </container>
 
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+
+          <div class="modal-body">
+                <div class="modal_splash"><img class="modal_splash_img" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="modal_splash"></div>
+                <div class="modal_text">
+                    <h4 class="modal_navn">DATA_OVERSKRIFT</h4>
+                    <h5 > <span class="modal_pris">DATA_PRIS </span>,-</h5><br>
+                    <h5 ><span class="modal_rabat">DATA_RABAT</span>,-</h5><br>
+                    <p class="modal_beskrivelse">DATA_LANG BESKRIVELSE</p><br>
+                    <h5 class="modal_udsolgt">Denne ret er desværre udsolgt</h5><br>
+                    <h5 class="modal_viggie">Denne ret er vegetarisk</h5>
+                </div>
+          </div>
+
+    </div>
+  </div>
+</div>
 
 
 

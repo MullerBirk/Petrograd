@@ -19,6 +19,11 @@ function vis_produkt(produkt){
     //klon produkt_template
 
     var klon = document.querySelector("#produkt_template").content.cloneNode(true);
+
+            //MODAL:
+               // var klon_modal = document.querySelector("#modal_template").content.cloneNode(true);
+
+
     //indsæt data i klon
         //background-image: url(imgs/medium/bochkarev-md.jpg);
     var imgPath = produkt.billede;
@@ -37,8 +42,7 @@ function vis_produkt(produkt){
         udsolgttekst.parentNode.removeChild( udsolgttekst);
     }
     else{
-        var udsolgttekst = klon.querySelector(".udsolgt");
-        udsolgttekst.parentNode.removeChild( udsolgttekst);
+
 
         var prisen = klon.querySelector(".pris");
         prisen.parentNode.removeChild( prisen );
@@ -46,10 +50,62 @@ function vis_produkt(produkt){
         rabatten.parentNode.removeChild( rabatten );
     }
 
+
+//
+//   if(produkt.rabatsats == 0){
+//      var rabatNej = klon.querySelector(".rabat");
+//       rabatNej.parentNode.removeChild( rabatNej );
+//    }
+
+
+             //MODAL:
+
+    /*
+                klon_modal.querySelector(".modal_splash_img").src = "imgs/medium/"+produkt.billede+"-md.jpg"
+                klon_modal.querySelector(".modal_navn").innerHTML = produkt.navn;
+                klon_modal.querySelector(".modal_pris").innerHTML = produkt.pris;
+
+                klon_modal.querySelector(".modal_rabat").innerHTML = rabatpris;
+                klon_modal.querySelector(".modal_beskrivelse").innerHTML = produkt.kortbeskrivelse;
+
+                if(produkt.udsolgt == false){
+                    //produkt er ikke udsolgt
+                    //udsolgt tekst fjernes
+                    var modal_udsolgttekst = klon_modal.querySelector(".modal_udsolgt");
+                    klon_modal.querySelector(".modal_udsolgt").parentNode.removeChild(modal_udsolgttekst);
+                }
+
+                if(produkt.vegetar == false){
+                    //produkt er ikke vegetarisk
+                    //vegetarisk tekst fjernes
+                    var veggietekst = klon_modal.querySelector(".modal_viggie");
+                    veggietekst.parentNode.removeChild( veggietekst);
+                }
+
+       */
+    klon.querySelector('.data_pic').addEventListener('click', function(){
+        var modal = document.querySelector('.modal-body');
+        modal.querySelector('.modal_navn').textContent=produkt.navn;
+        modal.querySelector('.modal_pris').textContent=produkt.pris;
+        modal.querySelector('.modal_rabat').textContent=rabatpris;
+        modal.querySelector('.modal_beskrivelse').textContent=produkt.kortbeskrivelse;
+
+       if(produkt.vegetar == false){
+           var veggietekst = modal.querySelector(".modal_viggie");
+           veggietekst.parentNode.removeChild(veggietekst);
+       }
+    })
+
     //append klon til produktliste
     document.querySelector(".produktliste").appendChild(klon);
 
+            //MODAL:
+                //document.querySelector(".modal-content").appendChild(klon_modal);
+
 }
+
+
+
 
 
 $('.scroll').click(function(){
